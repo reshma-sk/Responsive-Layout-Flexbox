@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            display: flex;
+           /*text-align: center;*/
+           justify-content: space-between;
+
+        }
+        .img1{
+            order: -1;
+        }
+        .img2{
+            order: 1;
+        }
+        .links{
+            background-color: #bdd6c8;
+            border: 1px solid red;
+            min-width: 400px;
+            order: 1;
+        }
+        .container{
+            /*line-height: 3rem;*/
+            display: flex;
+            margin-top: 20px;
+        }
+        @media (max-width:600px){
+            header{
+                flex-wrap: wrap;
+            }
+            h1{
+                order: -3;
+            }
+            .container{
+                flex-wrap: wrap;
+            }
+        }
+        @media (min-width:600px){
+            header{
+                flex-wrap: wrap;
+            }
+           
+            h1{
+                width: 100%;
+                order: -3;
+                text-align: center;
+            }
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <span class="img1"><img src="./bunny1.jpeg" style="width: 230px; height: 250px; border: 2px solid red;"
+          alt="Illustration of a young rabbit wearing a jacket and happily eating carrots in a garden">
+        </span>
+        <span class="img2"><img src="./bunny2.jpg" style="width: 230px; height: 250px; border: 2px solid red;"
+                alt="Illustration of 3 young rabbits eating berries in a garden">
+        </span>
+        <h1>The Tale of Peter Rabbit<br>
+        <span>By Beatrix Potter</span></h1>
+        
+    </header>
+    <div class="container">
+        <div class="links">
+            <h2>More Rabbits</h2>
+            <ul>
+                <li><a href="#">The Tale Of Peter Rabbit</a></li>
+                <li><a href="#">Learn About Rabbits</a></li>
+            </ul>
+        </div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi praesentium sed mollitia minima sequi. Perspiciatis, adipisci! Delectus aspernatur soluta voluptatum beatae, nobis quos modi non rem fugit, blanditiis necessitatibus rerum sit veritatis! Necessitatibus nostrum perspiciatis nisi voluptates incidunt possimus eligendi recusandae! Accusantium soluta necessitatibus quam porro exercitationem veritatis quis culpa rerum est veniam deserunt nemo, possimus facilis beatae totam fugit recusandae sint inventore architecto amet ipsam suscipit cum, dolores dignissimos! Reprehenderit molestiae esse modi omnis nisi sunt sit quibusdam. Deleniti, commodi! 
+        Labore dolorem odit rem harum quia exercitationem nemo. Ipsum sint ipsa quo error, aspernatur voluptates minima sapiente accusamus fugiat!
+    </div>
+</body>
+</html>
